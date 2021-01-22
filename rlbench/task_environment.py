@@ -26,6 +26,8 @@ _MAX_DEMO_ATTEMPTS = 10
 class InvalidActionError(Exception):
     pass
 
+class OutsideWorkspaceError(Exception):
+    pass
 
 class TaskEnvironmentError(Exception):
     pass
@@ -145,7 +147,7 @@ class TaskEnvironment(object):
                 pos_to_check = self._target_workspace_check.get_position()
             valid = self._scene.check_target_in_workspace(pos_to_check)
             if not valid:
-                raise InvalidActionError('Target is outside of workspace.')
+                raise OutsideWorkspaceError('Target is outside of workspace.')
 
             path = self._robot.arm.get_path(
                 action[:3], quaternion=action[3:], ignore_collisions=True,

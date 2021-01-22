@@ -5,12 +5,12 @@ class Observation(object):
     """Storage for both visual and low-dimensional observations."""
 
     def __init__(self,
-                 left_shoulder_rgb: np.ndarray,
-                 left_shoulder_depth: np.ndarray,
-                 left_shoulder_mask: np.ndarray,
-                 right_shoulder_rgb: np.ndarray,
-                 right_shoulder_depth: np.ndarray,
-                 right_shoulder_mask: np.ndarray,
+                #  left_shoulder_rgb: np.ndarray,
+                #  left_shoulder_depth: np.ndarray,
+                #  left_shoulder_mask: np.ndarray,
+                #  right_shoulder_rgb: np.ndarray,
+                #  right_shoulder_depth: np.ndarray,
+                #  right_shoulder_mask: np.ndarray,
                  wrist_rgb: np.ndarray,
                  wrist_depth: np.ndarray,
                  wrist_mask: np.ndarray,
@@ -27,12 +27,12 @@ class Observation(object):
                  gripper_touch_forces: np.ndarray,
                  wrist_camera_matrix: np.ndarray,
                  task_low_dim_state: np.ndarray):
-        self.left_shoulder_rgb = left_shoulder_rgb
-        self.left_shoulder_depth = left_shoulder_depth
-        self.left_shoulder_mask = left_shoulder_mask
-        self.right_shoulder_rgb = right_shoulder_rgb
-        self.right_shoulder_depth = right_shoulder_depth
-        self.right_shoulder_mask = right_shoulder_mask
+        # self.left_shoulder_rgb = left_shoulder_rgb
+        # self.left_shoulder_depth = left_shoulder_depth
+        # self.left_shoulder_mask = left_shoulder_mask
+        # self.right_shoulder_rgb = right_shoulder_rgb
+        # self.right_shoulder_depth = right_shoulder_depth
+        # self.right_shoulder_mask = right_shoulder_mask
         self.wrist_rgb = wrist_rgb
         self.wrist_depth = wrist_depth
         self.wrist_mask = wrist_mask

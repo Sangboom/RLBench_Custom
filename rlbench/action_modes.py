@@ -56,7 +56,7 @@ class GripperActionMode(Enum):
 class ActionMode(object):
 
     def __init__(self,
-                 arm: ArmActionMode = ArmActionMode.ABS_JOINT_VELOCITY,
+                 arm: ArmActionMode = ArmActionMode.ABS_JOINT_VELOCITY,             #custom ABS_JOINT_VELOCITY to 
                  gripper: GripperActionMode = GripperActionMode.OPEN_AMOUNT):
         self.arm = arm
         self.gripper = gripper

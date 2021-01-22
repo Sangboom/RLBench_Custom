@@ -21,6 +21,10 @@ setup(name='rlbench',
             'rlbench.assets',
             'rlbench.gym'
       ],
+      # package_data={'': ['*.ttm', '*.obj', '**/**/*.ttm', '**/**/*.obj'],
+      #               'rlbench': ['task_design.ttt']},
+      # : org
+      # : 2021
       package_data={'': ['*.ttm', '*.obj', '**/**/*.ttm', '**/**/*.obj'],
-                    'rlbench': ['task_design.ttt']},
+                    'rlbench': ['task_designfw.ttt']},
       )
